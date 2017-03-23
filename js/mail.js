@@ -7,11 +7,13 @@ if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) {
 
 navigator.mediaDevices.enumerateDevices()
 .then(function(devices) {
-  devices.forEach(function(device) {
+    devices.forEach(function(device) {
+	console.log("dummy")
     console.log(device.kind + ": " + device.label +
                 " id = " + device.deviceId);
   });
 })
-.catch(function(err) {
+    .catch(function(err) {
+	
   console.log(err.name + ": " + err.message);
 });
