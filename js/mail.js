@@ -1,6 +1,5 @@
 if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) {
   console.log("enumerateDevices() not supported.");
-  return;
 }
 
 // List cameras and microphones.
